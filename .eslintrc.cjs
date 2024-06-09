@@ -23,6 +23,7 @@ module.exports = {
     },
   ],
   rules: {
+    'import/no-unresolved': 'off',
     'prettier/prettier': 'error',
     'jsx-a11y/href-no-hash': ['off'],
     'react/prop-types': 'off',
