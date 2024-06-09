@@ -1,0 +1,27 @@
+@use 'colors' as *;
+
+html[data-theme='dark'] {
+  --background: #{$gray-800};
+  --background-inverse: #{$gray-700};
+
+  --text-primary: #{$gray-100};
+  --text-secondary: #{$lime-500};
+
+  --link: #{$gray-100};
+  --link-hover: #{$lime-500};
+
+  --button-primary: #{$lime-600};
+}
+
+html[data-theme='light'] {
+  --background: #{$gray-100};
+  --background-inverse: #{$gray-800};
+
+  --text-primary: #{$gray-800};
+  --text-secondary: #{$lime-900};
+
+  --link: #{$gray-100};
+  --link-hover: #{$lime-500};
+
+  --button-primary: #{$lime-600};
+}

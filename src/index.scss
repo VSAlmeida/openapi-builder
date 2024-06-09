@@ -1,3 +1,12 @@
-main {
-  display: block;
+@use '@themes/index.scss' as *;
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  overscroll-behavior: none;
+
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
