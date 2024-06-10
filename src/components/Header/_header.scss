@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0 10rem;
+  height: 6rem;
+
+  background-color: var(--background-header);
+
+  &--logo {
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+    svg {
+      height: 164px;
+    }
+  }
+
+  &--options {
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+    svg {
+      margin-left: 1rem;
+      fill: var(--link);
+      height: 32px;
+
+      &:hover {
+        cursor: pointer;
+        fill: var(--link-hover);
+      }
+    }
+  }
+}
