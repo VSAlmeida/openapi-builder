@@ -2,10 +2,12 @@
 
 html[data-theme='dark'] {
   --background: #{$gray-800};
-  --background-inverse: #{$gray-700};
+  --background-header: #{$gray-700};
+  --background-inverse: #{$gray-100};
 
   --text-primary: #{$gray-100};
   --text-secondary: #{$lime-500};
+  --text-inverse: #{$gray-800};
 
   --link: #{$gray-100};
   --link-hover: #{$lime-500};
@@ -15,10 +17,12 @@ html[data-theme='dark'] {
 
 html[data-theme='light'] {
   --background: #{$gray-100};
+  --background-header: #{$gray-800};
   --background-inverse: #{$gray-800};
 
   --text-primary: #{$gray-800};
   --text-secondary: #{$lime-900};
+  --text-inverse: #{$gray-100};
 
   --link: #{$gray-100};
   --link-hover: #{$lime-500};
