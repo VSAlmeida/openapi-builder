@@ -11,10 +11,8 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "@carbon/react": "^1.58.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^5.0.1",
     "react-router-dom": "^6.23.1",
     "sass": "^1.77.2"
   },
@@ -31,6 +29,7 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^3.2.5",
-    "vite": "^5.2.8"
+    "vite": "^5.2.8",
+    "vite-plugin-svgr": "^4.2.0"
   }
 }
