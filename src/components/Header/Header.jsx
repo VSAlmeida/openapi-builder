@@ -2,10 +2,11 @@ import React, { useContext } from 'react';
 
 import { ThemeContext } from '@context/ThemeContext';
 
+import LanguageSelector from '@components/LanguageSelector';
+
 import LogoHorizontal from '@assets/logoHorizontal.svg?react';
 import ThemeDarkIcon from '@assets/themeDark.svg?react';
 import ThemeLightIcon from '@assets/themeLight.svg?react';
-import LanguageIcon from '@assets/language.svg?react';
 import GithubIcon from '@assets/github.svg?react';
 
 const Header = () => {
@@ -17,7 +18,7 @@ const Header = () => {
         <LogoHorizontal />
       </div>
       <div className="header--options">
-        <LanguageIcon />
+        <LanguageSelector />
         {theme === 'light' && (
           <ThemeDarkIcon
             style={{ height: '42px' }}

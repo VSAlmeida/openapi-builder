@@ -1,0 +1,56 @@
+.languageSelector {
+  position: relative;
+
+  &__menu {
+    position: absolute;
+
+    width: 180px;
+    margin-top: 2.2rem;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    border-radius: 21px;
+    box-shadow: 0px 3px 9px #00000029;
+
+    background-color: var(--background-header);
+    color: #fff;
+  }
+
+  button {
+    all: unset;
+    width: 100%;
+
+    padding: 1rem 0;
+
+    text-align: center;
+
+    font-size: 18px;
+
+    &[aria-current='true'] {
+      background-color: var(--background-header-active);
+
+      &:first-child {
+        border-radius: 21px 21px 0 0;
+      }
+
+      &:last-child {
+        border-radius: 0 0 21px 21px;
+      }
+    }
+
+    &:hover {
+      background-color: var(--background-header-hover);
+
+      cursor: pointer;
+
+      &:first-child {
+        border-radius: 21px 21px 0 0;
+      }
+
+      &:last-child {
+        border-radius: 0 0 21px 21px;
+      }
+    }
+  }
+}
