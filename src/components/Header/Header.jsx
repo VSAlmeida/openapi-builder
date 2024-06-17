@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import { ThemeContext } from '@context/ThemeContext';
 
@@ -12,11 +13,16 @@ import GithubIcon from '@assets/github.svg?react';
 const Header = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
+  const navigate = useNavigate();
+
   return (
     <div className="header">
-      <div className="header--logo">
-        <LogoHorizontal />
-      </div>
+      <LogoHorizontal
+        className="header--logo"
+        onClick={() => {
+          navigate('/');
+        }}
+      />
       <div className="header--options">
         <LanguageSelector />
         {theme === 'light' && (
